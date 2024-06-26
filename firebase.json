@@ -1,12 +1,10 @@
 {
   "hosting": {
     "public": "dist/kamadoor/browser",
-    "ignore": ["firebase.json", "**/node_modules/**"],
-    "rewrites": [
-      {
-        "source": "/assets/",
-        "destination": "/index.html"
-      }
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
     ]
   }
 }
