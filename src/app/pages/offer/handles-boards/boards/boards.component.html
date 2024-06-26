@@ -1,0 +1,80 @@
+<div class="flex flex-col bg-kamadoor-light-gray m-2 p-4">
+  <span
+    class="flex pb-2 w-full border-b-2 border-b-kamadoor-orange font-sans gap-2 text-4xl text-white"
+  >
+    Listwy przypodłogowe
+  </span>
+
+  <div class="flex flex-col gap-4 font-sans mt-4 text-white">
+    <span>
+      W naszej ofercie posiadamy listwy przypodłogowe z najwyższej jakości płyty
+      MDF produkowane przez firmę LAGRUS:
+    </span>
+    <span>
+      <ul class="list-disc ml-10 flex flex-col gap-4">
+        <li>
+          <b>LAKIEROWANE</b> wielowarstwowo lakierem poliuretanowym na gładki
+          kolor o satynowym wykońeczniu. Podstawowy kolor to biały RAL 9003,
+          czarny RAL 9005 i szary RAL 7035, Każdy model listew można zamówić w
+          dowolnym kolorze z palety RAL i NCS. Listwa lakierowana ma długość
+          244cm.
+        </li>
+        <li>
+          <b>FORNIROWANE</b> dębem naturalnym o niepowtarzalnej fakturze
+          usłojeń, zarówno w wersji: surowej - szlifowane, do samodzielnego
+          wykończenia, jak i zabezpieczone lakierem bezbarwnym, gotowe do
+          montażu. Listwa fornirowana ma długość 242cm.
+        </li>
+      </ul>
+    </span>
+
+    <span>
+      Listwy są dostępneg w opcjach:
+      <ul class="list-disc ml-10 mt-2 flex flex-col gap-2">
+        <li>standardowej</li>
+        <li>wilgocioodpornej</li>
+        <li>ognioodpornej</li>
+      </ul>
+    </span>
+
+    <span
+      >Oferowane listwy posiadają dodatkowe frezowanie ułatwiające montaż, jak i
+      podfrezowanie umożliwiające wprowadzenie przewodów pod listwą. Na
+      specjalne zamówienie istnieje możliwość wykonania listwy z podfrezowaniem
+      umożliwiającym zamontowanie taśmy LED.</span
+    >
+
+    <span
+      >Pełna oferta drzwi jest dostępna w katalogu pod poniższym linkiem:</span
+    >
+    <a
+      class="text-blue-500 hover:underline"
+      href="https://www.lagrus.pl/do-pobrania/"
+      >wwww.lagrus.pl/do-pobrania</a
+    >
+  </div>
+
+  <div class="mt-10 flex flex-col w-full">
+    <span class="text-white font-semibold border-b pb-2 border-b-white"
+      >Poniżej przedstawiamy wybrane modele listew:</span
+    >
+  </div>
+
+  <div class="grid grid-flow-row grid-rows-3 grid-cols-4 gap-8">
+    @for (number of numbers; track number) {
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        [src]="
+          'assets/offer/handles-boards/boards/LP-' +
+          number.toString().padStart(2, '0') +
+          '.jpg'
+        "
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DWMB-{{ number.toString().padStart(2, "0") }}</span>
+    </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,80 @@
+<div class="flex flex-col bg-kamadoor-light-gray m-2 p-4">
+  <span
+    class="flex pb-2 w-full border-b-2 border-b-kamadoor-orange font-sans gap-2 text-4xl text-white"
+  >
+    Drzwi zewnętrzne KMT
+  </span>
+
+  <div class="flex flex-col gap-4 font-sans mt-4 text-white">
+    <span>
+      Jako kwalifikowany Dystrybutor , posiadamy w sprzedaży Pełen Asortyment
+      drzwi firmy KMT.
+    </span>
+    <span
+      >Firma KMT wytwarza drzwi w oparciu o normy jakości PN-EN ISO 9001:2001.
+      Produkowane przez tę firmę wyroby, wykonywane są zgodnie z wymogami
+      przepisów budowlanych, co potwierdzają posiadane certyfikaty i aprobaty
+      techniczne. Wszystkie oferowane modele drzwi, wykonywane są z materiałów
+      wysokiej jakości, pochodzących od kwalifikowanych dostawców.
+    </span>
+    <span
+      >W gamie produktów, znajdują się drzwi stalowe wewnętrzne i zewnętrzne,
+      antywłamaniowe klasy B i C, płaskie, tłoczone, pełne, przeszklone,
+      malowane, laminowane, od szerokości "80" do "130".
+    </span>
+    <span
+      >Pełna oferta drzwi jest dostępna w katalogu pod poniższym linkiem:</span
+    >
+    <a
+      class="text-blue-500 hover:underline"
+      href="https://www.kmt.com.pl/katalogi-produktowe/"
+      >www.kmt.com.pl/katalogi-produktowe</a
+    >
+  </div>
+
+  <div class="mt-10 flex flex-col gap-4 w-full">
+    <span class="text-white font-semibold"
+      >Poniżej przedstawiamy wybrane modele tego producenta:</span
+    >
+    <span class="text-white text-4xl font-semibold border-b pb-2 border-b-white"
+      >DRZWI ALUMINIOWE</span
+    >
+    <div class="grid grid-flow-row grid-rows-2 grid-cols-4 gap-8">
+      @for (number of numbers1To8; track number) {
+      <div class="flex flex-col h-full text-center">
+        <p-image
+          [src]="
+            'assets/offer/external/kmt/DZK-' +
+            number.toString().padStart(2, '0') +
+            '.JPG'
+          "
+          alt="Image"
+          [preview]="true"
+          imageClass="p-6"
+        />
+        <span>DZK-{{ number.toString().padStart(2, "0") }}</span>
+      </div>
+      }
+    </div>
+    <span class="text-white text-4xl font-semibold border-b pb-2 border-b-white"
+      >DRZWI STALOWE</span
+    >
+    <div class="grid grid-flow-row grid-rows-2 grid-cols-4 gap-8">
+      @for (number of numbers9To16; track number) {
+      <div class="flex flex-col h-full text-center">
+        <p-image
+          [src]="
+            'assets/offer/external/kmt/DZK-' +
+            number.toString().padStart(2, '0') +
+            '.JPG'
+          "
+          alt="Image"
+          [preview]="true"
+          imageClass="p-6"
+        />
+        <span>DZK-{{ number.toString().padStart(2, "0") }}</span>
+      </div>
+      }
+    </div>
+  </div>
+</div>

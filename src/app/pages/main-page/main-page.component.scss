@@ -1,0 +1,11 @@
+:host {
+  ::ng-deep {
+    .p-carousel-items-container {
+      @apply max-h-[500px];
+    }
+
+    .p-carousel-indicator.p-highlight {
+      @apply rounded-full h-4 w-4 border-white bg-white;
+    }
+  }
+}

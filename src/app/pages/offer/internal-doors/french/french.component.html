@@ -1,0 +1,49 @@
+<div class="flex flex-col bg-kamadoor-light-gray m-2 p-4">
+  <span
+    class="flex pb-2 w-full border-b-2 border-b-kamadoor-orange font-sans gap-2 text-4xl text-white"
+  >
+    Drzwi FRANCUSKIE
+  </span>
+
+  <div
+    class="flex flex-col gap-4 font-sans mt-4 text-white pb-8 border-b border-b-white"
+  >
+    <span>
+      Drzwi w stylu francuskim to zwykle konstrukcja dwuskrzydłowa, choć nie
+      zawsze - coraz częściej spotkać można również drzwi francuskie wewnętrzne
+      przesuwne lub jednoskrzydłowe. Charakteryzują się one przeszkleniem niemal
+      na całej wysokości drzwi, lekką konstrukcją i szprosami, czyli ozdobnymi
+      listwami, które dzielą skrzydła drzwiowe na przeszklone segmenty. Drzwi
+      francuskie mają więc smukłą i elegancką konstrukcję, która nadaje całemu
+      pomieszczeniu niepowtarzalnego charakteru. Tradycyjna odsłona tych drzwi
+      ma kolor biały, jednak można znaleźć również drzwi francuskie nowoczesne,
+      które z powodzeniem dopasują się do stylu, w jakim urządzone jest wnętrze.
+    </span>
+
+    <span class="mt-6"
+      >Chcąc uzyskać wstępną - przybliżoną wycenę, prosimy o złożenie nam
+      pisemnego zapytania przy użyciu
+      <a href="kontakt" class="text-blue-500 hover:underline"
+        >FORMULARZA KONTAKTOWEGO</a
+      ></span
+    >
+  </div>
+
+  <div class="grid grid-flow-row grid-rows-4 grid-cols-4 gap-8">
+    @for (number of numbers; track number) {
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        [src]="
+          'assets/offer/internal/french/DWF-' +
+          number.toString().padStart(2, '0') +
+          '.jpg'
+        "
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DWF-{{ number.toString().padStart(2, "0") }}</span>
+    </div>
+    }
+  </div>
+</div>

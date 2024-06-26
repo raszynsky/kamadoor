@@ -1,0 +1,66 @@
+<div class="flex flex-col bg-kamadoor-light-gray m-2 p-4">
+  <span
+    class="flex pb-2 w-full border-b-2 border-b-kamadoor-orange font-sans gap-2 text-4xl text-white"
+  >
+    Drzwi DRE
+  </span>
+
+  <div class="flex flex-col gap-4 font-sans mt-4 text-white">
+    <span>
+      Oferowane przez naszą firmę drzwi DRE mogą być wykonywane w wersji:
+      <ul class="list-disc ml-10 mt-2 flex flex-col gap-2">
+        <li>przylgowej</li>
+        <li>bezprzylgowej</li>
+        <li>przesuwnej</li>
+      </ul>
+    </span>
+    <span>
+      Skrzydła o konstrukcji ramowej lub płytowej mogą być malowane lakierem UV
+      lub okleinowane laminatem.
+    </span>
+    <span>
+      Chcąc uzyskać wstępną - przybliżoną wycenę, prosimy o złożenie nam
+      pisemnego zapytania przy użyciu
+      <a href="kontakt" class="text-blue-500 hover:underline"
+        >FORMULARZA KONTAKTOWEGO</a
+      ></span
+    >
+    <span
+      >Prosimy w formularzu wypełnić wszystkie wymagane pola, wskazać nam nazwę
+      wybranego modelu drzwi oraz podać orientacyjny wymiar otworu drzwiowego -
+      jego szerokość oraz wysokość oraz grubość muru.</span
+    >
+    <span
+      >Pełna oferta drzwi jest dostępna w katalogu pod poniższym linkiem:</span
+    >
+    <a
+      class="text-blue-500 hover:underline"
+      href="https://dre.pl/pliki-do-pobrania/"
+      >Najnowszy katalog drzwi DRE</a
+    >
+  </div>
+
+  <div class="mt-10 flex flex-col w-full">
+    <span class="text-white font-semibold border-b pb-2 border-b-white"
+      >Poniżej przedstawiamy wybrane modele tego producenta:</span
+    >
+  </div>
+
+  <div class="grid grid-flow-row grid-rows-6 grid-cols-4 gap-8">
+    @for (number of numbers; track number) {
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        [src]="
+          'assets/offer/internal/baranski/DWB-' +
+          number.toString().padStart(2, '0') +
+          '.jpg'
+        "
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DWB-{{ number.toString().padStart(2, "0") }}</span>
+    </div>
+    }
+  </div>
+</div>

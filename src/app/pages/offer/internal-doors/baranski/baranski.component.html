@@ -1,0 +1,54 @@
+<div class="flex flex-col bg-kamadoor-light-gray m-2 p-4">
+  <span
+    class="flex pb-2 w-full border-b-2 border-b-kamadoor-orange font-sans gap-2 text-4xl text-white"
+  >
+    Drzwi wewnętrzne BARAŃSKI
+  </span>
+
+  <div class="flex flex-col gap-4 font-sans mt-4 text-white">
+    <span>
+      Drzwi wewnętrzne Barański to produkty wysokiej jakości, zachwycające nie
+      tylko swoją solidnością, ale również estetyką i trwałością.
+    </span>
+    <span>
+      W naszym salonie sprzedaży można znaleźć drzwi wewnętrzne Barański w
+      różnych wzorach i kolorach. Dysponujemy modelami ze szkleniem oraz bez.
+      Posiadamy produkty w jednolitych barwach np. bieli, a także fornirowane. W
+      naszym asortymencie można znaleźć drzwi wewnętrzne Barański utrzymane w
+      różnych stylach. Posiadamy modele idealne do przestrzeni klasycznych,
+      nowoczesnych i urządzonych w nieco bardziej wyszukanej stylistyce.
+    </span>
+    <span
+      >Pełna oferta drzwi jest dostępna w katalogu pod poniższym linkiem:</span
+    >
+    <a
+      class="text-blue-500 hover:underline"
+      href="https://www.baranskidrzwi.pl/katalogi/"
+      >www.baranskidrzwi.pl/katalogi</a
+    >
+  </div>
+
+  <div class="mt-10 flex flex-col w-full">
+    <span class="text-white font-semibold border-b pb-2 border-b-white"
+      >Poniżej przedstawiamy wybrane modele tego producenta:</span
+    >
+  </div>
+
+  <div class="grid grid-flow-row grid-rows-6 grid-cols-4 gap-8">
+    @for (number of numbers; track number) {
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        [src]="
+          'assets/offer/internal/baranski/DWB-' +
+          number.toString().padStart(2, '0') +
+          '.jpg'
+        "
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DWB-{{ number.toString().padStart(2, "0") }}</span>
+    </div>
+    }
+  </div>
+</div>

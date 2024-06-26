@@ -1,0 +1,91 @@
+<div class="flex flex-col bg-kamadoor-light-gray m-2 p-4">
+  <span
+    class="flex pb-2 w-full border-b-2 border-b-kamadoor-orange font-sans gap-2 text-4xl text-white"
+  >
+    Drzwi zewnętrzne BARAŃSKI
+  </span>
+
+  <div class="flex flex-col gap-4 font-sans mt-4 text-white">
+    <span>
+      Drzwi zewnętrzne <b>BARAŃSKI</b> to wysokiej jakości ciepłe drzwi
+      <b>DREWNIANE</b> obłogowane dębem występujące w kilku wariantach
+      konstrukcyjnych:
+      <ul class="list-disc ml-10 mt-4 flex flex-col gap-4">
+        <li>
+          THERMO WOOD PŁYTOWE bezprzylgowe o grubości skrzydła 90mm<br />współczynnik
+          przenikania ciepła U=0,7 W/(M²*K)
+        </li>
+        <li>
+          THERMO WOOD PŁYTOWE przylgowe o grubości skrzydła 78mm<br />współczynnik
+          przenikania ciepła U=0,85 W/(M²*K)
+        </li>
+        <li>
+          PŁYCINOWE przylgowe o grubości skrzydła 78mm<br />współczynnik
+          przenikania ciepła U=1,1 W/(M²*K)
+        </li>
+      </ul></span
+    >
+    <span>Oferowane drzwi produkowane są <b>na wymiar.</b></span>
+    <span
+      >Pełna oferta drzwi jest dostępna w katalogu pod poniższym linkiem:</span
+    >
+    <a
+      class="text-blue-500 hover:underline"
+      href="https://www.baranskidrzwi.pl/katalogi/"
+      >www.baranskidrzwi.pl/katalogi</a
+    >
+  </div>
+
+  <div class="mt-10 flex flex-col w-full">
+    <span class="text-white font-semibold border-b pb-2 border-b-white"
+      >Poniżej przedstawiamy wybrane modele tego producenta:</span
+    >
+  </div>
+
+  <div class="grid grid-flow-row grid-rows-5 grid-cols-4 gap-8">
+    @for (number of numbers; track number) {
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        [src]="
+          'assets/offer/external/baranski/DZB-' +
+          number.toString().padStart(2, '0') +
+          '.JPG'
+        "
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DZB-{{ number.toString().padStart(2, "0") }}</span>
+    </div>
+    }
+  </div>
+  <div class="grid grid-flow-row grid-rows-1 grid-cols-3 gap-8">
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        src="assets/offer/external/baranski/DZB-21.JPG"
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DZB-21</span>
+    </div>
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        src="assets/offer/external/baranski/DZB-22.JPG"
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DZB-22</span>
+    </div>
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        src="assets/offer/external/baranski/DZB-23.JPG"
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DZB-23</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="flex flex-col bg-kamadoor-light-gray m-2 p-4">
+  <span
+    class="flex pb-2 w-full border-b-2 border-b-kamadoor-orange font-sans gap-2 text-4xl text-white"
+  >
+    Drzwi JAGDOR / JAGRAS
+  </span>
+
+  <div class="flex flex-col gap-4 font-sans mt-4 text-white">
+    <span>
+      Oferowane przez naszą firmę drzwi JAGDOR oraz JAGRAS to drzwi bezprzylgowe
+      otwierane standardowo oraz drzwi otwierane przez ościeżnicę (rewersyjne) i
+      to zarówno na ościeżnicy regulowanej, jak i ukrytej w ścianie "SKRIVEN",
+      drzwi przesuwne naścienne oraz przesuwne chowane w ścianie, a także drzwi
+      łamane.
+    </span>
+    <span
+      >Do dyspozycji naszego Klienta oddajemy drzwi wykonane w różnych wzorach i
+      kolorach fornirów, a także wybranych kolorach RAL. Oferujemy szeroką gamę
+      modeli zarówno drzwi pełnych, przeszklonych, z frezowaniem klasycznym,
+      nowoczesnym, a także z elementami ozdobnymi, które stanowią bonie
+      aluminiowe</span
+    >
+    <span
+      >Pełna oferta drzwi jest dostępna w katalogu pod poniższym linkiem:</span
+    >
+    <a
+      class="text-blue-500 hover:underline"
+      href="https://www.jagras.eu/katalogi/"
+      >www.jagras.eu/katalogi</a
+    >
+  </div>
+
+  <div class="mt-10 flex flex-col w-full">
+    <span class="text-white font-semibold border-b pb-2 border-b-white"
+      >Poniżej przedstawiamy wybrane modele tego producenta:</span
+    >
+  </div>
+
+  <div class="grid grid-flow-row grid-rows-5 grid-cols-4 gap-8">
+    @for (number of numbers; track number) {
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        [src]="
+          'assets/offer/internal/jagdor-jagras/DWJ-' +
+          number.toString().padStart(2, '0') +
+          '.jpg'
+        "
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DWJ-{{ number.toString().padStart(2, "0") }}</span>
+    </div>
+    }
+  </div>
+</div>

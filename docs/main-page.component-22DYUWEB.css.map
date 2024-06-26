@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/main-page/main-page.component.scss"],
+  "sourcesContent": [":host {\r\n  ::ng-deep {\r\n    .p-carousel-items-container {\r\n      @apply max-h-[500px];\r\n    }\r\n\r\n    .p-carousel-indicator.p-highlight {\r\n      @apply rounded-full h-4 w-4 border-white bg-white;\r\n    }\r\n  }\r\n}\r\n"],
+  "mappings": "AAGM,MAAA,UAAA,CAAA,2BAAA,WAAA,KAAA,CAIA,MAAA,UAAA,CAAA,oBAAA,CAAA,YAAA,OAAA,KAAA,MAAA,KAJA,cAIA,OAAA,qBAAA,EAAA,aAAA,IAAA,IAAA,IAAA,IAAA,EAAA,IAAA,sBAAA,iBAAA,EAAA,iBAAA,IAAA,IAAA,IAAA,IAAA,EAAA,IAAA,iBAAA",
+  "names": []
+}

@@ -1,0 +1,28 @@
+:host {
+  ::ng-deep {
+    .p-menubar {
+      @apply bg-white text-kamadoor-gray py-0;
+    }
+
+    .p-menuitem-content {
+      @apply bg-white text-kamadoor-gray font-bold;
+
+      &:hover,
+      :active {
+        @apply text-kamadoor-orange;
+      }
+
+      &:has(.active-item) {
+        @apply bg-gray-300 text-kamadoor-orange #{!important};
+      }
+    }
+
+    .p-submenu-list {
+      @apply w-[300%];
+
+      .p-menuitem-content {
+        @apply font-semibold #{!important};
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+<div class="flex flex-col bg-kamadoor-light-gray m-2 p-4">
+  <span
+    class="flex pb-2 w-full border-b-2 border-b-kamadoor-orange font-sans gap-2 text-4xl text-white"
+  >
+    Drzwi Loftowe
+  </span>
+
+  <div class="flex flex-col gap-4 font-sans mt-4 text-white">
+    <span class="text-2xl">
+      Naszą specjalnością produktową są Drzwi Loftowe – Szklane – Wahadłowe –
+      Rozwierane.
+    </span>
+    <span class="text-3xl">
+      Drzwi Loftowe wykonujemy pod <u>Wymiar</u> na
+      <u>Indywidualne</u> zamówienie.
+    </span>
+    <span
+      >Na etapie podjęcia współpracy z naszą firmą, dokonujemy pomiaru otworu
+      drzwiowego i doradzamy w zakresie projektu oraz określamy wraz z klientem
+      indywidualne cechy techniczne i wizualne drzwi w taki sposób, aby produkt
+      końcowy w pełni spełnił oczekiwania zamawiającego.</span
+    >
+    <span
+      >Po wyprodukowaniu zabudowy drzwiowej, dostarczamy ją na miejsce
+      przeznaczenia oraz przeprowadzamy jej montaż.</span
+    >
+    <span
+      >Poniżej prezentujemy przykładowe zdjęcia różnego typu drzwi Loftowych -
+      Industrialnych, jakie wykonaliśmy dla naszych klientów.</span
+    >
+    <span
+      >Chcąc uzyskać wstępną - przybliżoną wycenę, prosimy o złożenie nam
+      pisemnego zapytania przy użyciu
+      <a href="kontakt" class="text-blue-500 hover:underline"
+        >FORMULARZA KONTAKTOWEGO</a
+      ></span
+    >
+    <span
+      >Prosimy w Formularzu wypełnić wszystkie wymagane pola oraz wskazać numer
+      zdjęcia z drzwiami, jakie są najbliższe Państwa oczekiwaniom oraz podać
+      orientacyjny wymiar otworu drzwiowego - jego szerokość oraz
+      wysokość.</span
+    >
+    <span
+      >Posiadamy ponad 10 Letnie Doświadczenie w Branży Stolarki
+      Budowlanej.</span
+    >
+  </div>
+
+  <div class="grid grid-flow-row grid-rows-6 grid-cols-4 gap-8">
+    @for (number of numbers; track number) {
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        [src]="
+          'assets/offer/internal/baranski/DWB-' + number.toString() + '.jpg'
+        "
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DWB-{{ number.toString() }}</span>
+    </div>
+    }
+  </div>
+</div>

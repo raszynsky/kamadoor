@@ -1,0 +1,67 @@
+<div class="bg-kamadoor-light-gray p-4 flex flex-col gap-6 justify-center">
+  <p-carousel
+    class="flex"
+    [value]="carouselImages"
+    [numVisible]="1"
+    [numScroll]="1"
+    [circular]="true"
+    [showNavigators]="false"
+    autoplayInterval="10000"
+    indicatorStyleClass="border-2 rounded-full h-4 w-4 border-white"
+    indicatorsContentClass="w-full bg-black"
+  >
+    <ng-template let-item pTemplate="item">
+      <div
+        class="bg-black min-h-full min-w-full flex justify-center items-center relative"
+      >
+        <img
+          src="assets/slider/{{ item.image }}"
+          [alt]="item.name"
+          class="object-fill max-h-[500px]"
+        />
+        <span
+          class="absolute bottom-0 w-full h-10 bg-black text-xl text-center font-semibold leading-10"
+          >{{ item.name }}</span
+        >
+      </div>
+    </ng-template>
+  </p-carousel>
+
+  <p-dataView [value]="offerItems" layout="grid">
+    <ng-template let-product pTemplate="grid" let-items>
+      <div
+        class="grid grid-flow-row grid-rows-2 grid-cols-4 gap-4 bg-kamadoor-orange px-16 py-10"
+      >
+        @for (item of items; track item.name) {
+        <div class="flex flex-col whitespace-pre-wrap">
+          <span
+            class="text-white bg-kamadoor-orange text-xl text-center my-5"
+            >{{ item.name }}</span
+          >
+
+          <a
+            [href]="item.url"
+            class="h-full bg-white pt-2 pb-6 px-3 flex flex-col transition ease-in-out duration-300 hover:-translate-y-1 hover:scale-110"
+          >
+            <img
+              class="h-3/4 w-full"
+              [src]="'assets/main-page-offer/' + item.image"
+              [alt]="item.name"
+            />
+            <div class="flex flex-col h-1/4">
+              <span
+                class="bg-kamadoor-orange py-1 text-white text-center text-lg"
+                >Zobacz ofertę</span
+              >
+              <span class="text-black text-center whitespace-pre-wrap">{{
+                item.description
+              }}</span>
+            </div>
+          </a>
+        </div>
+
+        }
+      </div>
+    </ng-template>
+  </p-dataView>
+</div>

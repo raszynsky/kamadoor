@@ -1,0 +1,55 @@
+<div class="flex flex-col bg-kamadoor-light-gray m-2 p-4">
+  <span
+    class="flex pb-2 w-full border-b-2 border-b-kamadoor-orange font-sans gap-2 text-4xl text-white"
+  >
+    Drzwi wewnętrzne VOSTER
+  </span>
+
+  <div class="flex flex-col gap-4 font-sans mt-4 text-white">
+    <span>
+      Oferowane przez naszą firmę drzwi wewnętrzne VOSTER mogą być wykonywane w
+      wersji:
+      <ul class="list-disc ml-10 mt-4 flex flex-col gap-2">
+        <li>bezprzylgowej</li>
+        <li>przylgowej</li>
+        <li>przesuwnej</li>
+      </ul></span
+    >
+    <span
+      >W gamie produktów znajdują się drzwi o konstrukcji ramowej lub płytowej o
+      szerokości od "60" do "100".</span
+    >
+    <span
+      >Pełna oferta drzwi jest dostępna w katalogu pod poniższym linkiem:</span
+    >
+    <a
+      class="text-blue-500 hover:underline"
+      href="https://www.voster.pl/katalog/"
+      >www.voster.pl/katalog</a
+    >
+  </div>
+
+  <div class="mt-10 flex flex-col w-full">
+    <span class="text-white font-semibold border-b pb-2 border-b-white"
+      >Poniżej przedstawiamy wybrane modele tego producenta:</span
+    >
+  </div>
+
+  <div class="grid grid-flow-row grid-rows-4 grid-cols-4 gap-8">
+    @for (number of numbers; track number) {
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        [src]="
+          'assets/offer/internal/voster/DWV-' +
+          number.toString().padStart(2, '0') +
+          '.jpg'
+        "
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DWV-{{ number.toString().padStart(2, "0") }}</span>
+    </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="flex flex-col bg-kamadoor-light-gray m-2 p-4">
+  <span
+    class="flex pb-2 w-full border-b-2 border-b-kamadoor-orange font-sans gap-2 text-4xl text-white"
+  >
+    Drzwi wewnętrzne do mieszkania na wymiar DALLAS
+  </span>
+
+  <div class="flex flex-col gap-4 font-sans mt-4 text-white">
+    <span>
+      Drzwi wewnętrzne do mieszkania DALLAS to drzwi renomowanej polskiej firmy.
+      Producent wykorzystuje wszystkie najważniejsze cechy i zalety drewna, aby
+      następnie przekazać je nowym właścicielom.
+    </span>
+    <span
+      >W ofercie znajdują się również DRZWI PRZECIWPOŻAROWE - EI 30 i EI
+      60.</span
+    >
+    <span
+      >Oferowane drzwi produkowane są <b>na wymiar</b> z możliwością
+      <b>modyfikacji</b> wybranego modelu.</span
+    >
+    <span
+      >Pełna oferta drzwi jest dostępna w katalogu pod poniższym linkiem:</span
+    >
+    <a
+      class="text-blue-500 hover:underline"
+      href="https://www.dallas-drzwi.pl/do-pobrania/"
+      >www.dallas-drzwi.pl/do-pobrania</a
+    >
+  </div>
+
+  <div class="mt-10 flex flex-col w-full">
+    <span class="text-white font-semibold border-b pb-2 border-b-white"
+      >Poniżej przedstawiamy wybrane modele tego producenta:</span
+    >
+  </div>
+
+  <div class="grid grid-flow-row grid-rows-3 grid-cols-4 gap-8">
+    @for (number of numbers; track number) {
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        [src]="
+          'assets/offer/apartment-internal/dallas/DWMD-' +
+          number.toString().padStart(2, '0') +
+          '.JPG'
+        "
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DWMD-{{ number.toString().padStart(2, "0") }}</span>
+    </div>
+    }
+  </div>
+</div>

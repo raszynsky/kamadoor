@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/header/header.component.scss"],
+  "sourcesContent": [":host {\r\n  ::ng-deep {\r\n    .p-menubar {\r\n      @apply bg-white text-kamadoor-gray py-0;\r\n    }\r\n\r\n    .p-menuitem-content {\r\n      @apply bg-white text-kamadoor-gray font-bold;\r\n\r\n      &:hover,\r\n      :active {\r\n        @apply text-kamadoor-orange;\r\n      }\r\n\r\n      &:has(.active-item) {\r\n        @apply bg-gray-300 text-kamadoor-orange #{!important};\r\n      }\r\n    }\r\n\r\n    .p-submenu-list {\r\n      @apply w-[300%];\r\n\r\n      .p-menuitem-content {\r\n        @apply font-semibold #{!important};\r\n      }\r\n    }\r\n  }\r\n}\r\n"],
+  "mappings": "AAGM,MAAA,UAAA,CAAA,UAAA,iBAAA,EAAA,iBAAA,IAAA,IAAA,IAAA,IAAA,EAAA,IAAA,kBAAA,YAAA,EAAA,eAAA,EAAA,mBAAA,EAAA,MAAA,IAAA,IAAA,IAAA,IAAA,EAAA,IAAA,mBAAA,CAIA,MAAA,UAAA,CAAA,mBAAA,iBAAA,EAAA,iBAAA,IAAA,IAAA,IAAA,IAAA,EAAA,IAAA,kBAAA,YAAA,IAAA,mBAAA,EAAA,MAAA,IAAA,IAAA,IAAA,IAAA,EAAA,IAAA,mBAAA,CAIE,MAAA,UAAA,CAJF,kBAIE,wBAJF,2BAIE,mBAAA,EAAA,MAAA,IAAA,IAAA,GAAA,EAAA,EAAA,IAAA,mBAAA,CAIA,MAAA,UAAA,CARF,kBAQE,KAAA,CAAA,aAAA,iBAAA,aAAA,iBAAA,IAAA,IAAA,IAAA,IAAA,EAAA,IAAA,4BAAA,mBAAA,aAAA,MAAA,IAAA,IAAA,GAAA,EAAA,EAAA,IAAA,6BAAA,CAKF,MAAA,UAAA,CAAA,eAAA,MAAA,IAAA,CAGE,MAAA,UAAA,CAHF,eAGE,CAhBF,mBAgBE,YAAA,aAAA",
+  "names": []
+}

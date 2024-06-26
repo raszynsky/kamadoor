@@ -1,0 +1,64 @@
+<div class="mx-[5%] flex justify-between">
+  <a href="/"><img class="w-full" src="assets/kamadoor.jpg" /></a>
+  <div class="flex flex-col justify-between my-2">
+    <a class="text-right text-xl hover:underline" href="/">
+      Drzwi - Zabudowy szklane - Podłogi - Poznań
+    </a>
+    <div class="flex justify-between">
+      <span>
+        <i class="fa fa-phone-square"></i>
+        <a
+          class="text-right text-xl font-extrabold hover:underline hover:text-kamadoor-orange active:text-kamadoor-orange"
+          href="tel:+48606675923"
+        >
+          606 675 923
+        </a>
+      </span>
+      <span>
+        <i class="fa fa-phone-square"></i>
+        <a
+          class="text-right text-xl font-extrabold hover:underline hover:text-kamadoor-orange active:text-kamadoor-orange"
+          href="tel:+48662081045"
+        >
+          662 081 045
+        </a>
+      </span>
+    </div>
+  </div>
+</div>
+<p-menubar [model]="items">
+  <ng-template pTemplate="item" let-item let-root="root">
+    @if (item.url) {
+    <a
+      pRipple
+      [ngClass]="{
+        'active-item':
+          activeItem === item.id || (item.id === 'offer' && isOfferItemSelected)
+      }"
+      [href]="item.url"
+      class="flex align-items-center p-menuitem-link"
+    >
+      <span [class]="item.icon"></span>
+      <span class="ml-2">{{ item.label }}</span>
+      @if (item.items) {
+      <i class="pi pi-angle-down ml-2"></i>
+      }
+    </a>
+    } @else {
+    <a
+      pRipple
+      [ngClass]="{
+        'active-item':
+          activeItem === item.id || (item.id === 'offer' && isOfferItemSelected)
+      }"
+      class="flex align-items-center p-menuitem-link"
+    >
+      <span [class]="item.icon"></span>
+      <span class="ml-2">{{ item.label }}</span>
+      @if (item.items) {
+      <i class="pi pi-angle-down ml-2"></i>
+      }
+    </a>
+    }
+  </ng-template>
+</p-menubar>

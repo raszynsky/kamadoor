@@ -1,0 +1,7 @@
+:host {
+  ::ng-deep {
+    .p-accordion-header-link {
+      @apply text-black bg-kamadoor-orange rounded-lg;
+    }
+  }
+}

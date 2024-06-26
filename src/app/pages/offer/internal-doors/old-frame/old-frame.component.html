@@ -1,0 +1,58 @@
+<div class="flex flex-col bg-kamadoor-light-gray m-2 p-4">
+  <span
+    class="flex pb-2 w-full border-b-2 border-b-kamadoor-orange font-sans gap-2 text-4xl text-white"
+  >
+    Drzwi wewnętrzne na starą metalową ościeżnicę
+  </span>
+
+  <div class="flex flex-col gap-4 font-sans mt-4 text-white">
+    <span>
+      Jeśli poszukują Państwo rozwiązania, dzięki któremu wymienią drzwi bez
+      konieczności demontażu starych metalowych futryn, zapraszamy!
+    </span>
+    <span
+      >Mamy dla Państwa innowacyjną usługę -
+      <b
+        >montaż drzwi z ościeżnicą nakładkową, którą montuje się na stare
+        futryny.</b
+      >
+    </span>
+    <span
+      >Ościeżnica nakładkowa obejmuje zamontowaną wcześniej ościeżnicę metalową,
+      dzięki temu można zaaranżować wnętrze od "nowa" i nadać mu niepowtarzalny
+      charakter bez przeprowadzania skomplikowanych prac budowlanych.
+    </span>
+    <span class="mt-6"
+      >Chcąc uzyskać wstępną - przybliżoną wycenę, prosimy o złożenie nam
+      pisemnego zapytania przy użyciu
+      <a href="kontakt" class="text-blue-500 hover:underline"
+        >FORMULARZA KONTAKTOWEGO</a
+      ></span
+    >
+  </div>
+
+  <div class="mt-10 flex flex-col w-full">
+    <span class="text-white font-semibold border-b pb-2 border-b-white"
+      >Poniżej przedstawiamy przykładowe modele drzwi, które można zamontować z
+      ościeżnicą nakładkową na stare futryny:</span
+    >
+  </div>
+
+  <div class="grid grid-flow-row grid-rows-4 grid-cols-4 gap-8">
+    @for (number of numbers; track number) {
+    <div class="flex flex-col h-full text-center">
+      <p-image
+        [src]="
+          'assets/offer/internal/old-frame/DN-' +
+          number.toString().padStart(2, '0') +
+          '.jpg'
+        "
+        alt="Image"
+        [preview]="true"
+        imageClass="p-6"
+      />
+      <span>DN-{{ number.toString().padStart(2, "0") }}</span>
+    </div>
+    }
+  </div>
+</div>

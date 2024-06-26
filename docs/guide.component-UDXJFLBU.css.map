@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/pages/guide/guide.component.scss"],
+  "sourcesContent": [":host {\r\n  ::ng-deep {\r\n    .p-accordion-header-link {\r\n      @apply text-black bg-kamadoor-orange rounded-lg;\r\n    }\r\n  }\r\n}\r\n"],
+  "mappings": "AAGM,MAAA,UAAA,CAAA,wBAAA,cAAA,MAAA,iBAAA,EAAA,iBAAA,IAAA,IAAA,GAAA,EAAA,EAAA,IAAA,kBAAA,mBAAA,EAAA,MAAA,IAAA,EAAA,EAAA,EAAA,EAAA,IAAA,mBAAA",
+  "names": []
+}
