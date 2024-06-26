@@ -3,7 +3,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist/browser",
+    "outDir": "./dist/kamadoor/browser",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
