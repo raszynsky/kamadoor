@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
     {
       icon: 'fa fa-home',
       label: '|',
-      url: '',
+      url: '/',
       id: 'home',
     },
     {
