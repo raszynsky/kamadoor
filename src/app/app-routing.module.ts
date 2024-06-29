@@ -11,7 +11,6 @@ import { LoftDoorsComponent } from '@pages/offer/loft-doors/loft-doors.component
 import { HiddenDoorsComponent } from '@pages/offer/hidden-doors/hidden-doors.component';
 import { SlidingDoorsComponent } from '@pages/offer/sliding-doors/sliding-doors.component';
 import { ShowersComponent } from '@pages/offer/showers/showers.component';
-import { CataloguesComponent } from '@pages/catalogues/catalogues.component';
 import { RealizationsComponent } from '@pages/realizations/realizations.component';
 import { GuideComponent } from '@pages/guide/guide.component';
 import { AboutUsComponent } from '@pages/about-us/about-us.component';
@@ -193,10 +192,6 @@ const routes: Routes = [
         ],
       },
     ],
-  },
-  {
-    path: 'katalogi',
-    component: CataloguesComponent,
   },
   {
     path: 'realizacje',

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
-import { ImageModule } from 'primeng/image';
+import { ImagePreviewComponent } from '@components/image-preview/image-preview.component';
 
 @Component({
   selector: 'kamadoor-internal-dallas',
   templateUrl: './dallas.component.html',
   styleUrls: ['./dallas.component.scss'],
-  imports: [ImageModule],
+  imports: [ImagePreviewComponent],
   standalone: true,
 })
 export class InternalDallasComponent {

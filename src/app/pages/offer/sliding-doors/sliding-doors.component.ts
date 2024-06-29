@@ -2,28 +2,30 @@ import { Component } from '@angular/core';
 
 import { DataViewModule } from 'primeng/dataview';
 
+import { OfferButtonComponent } from '@components/offer-button/offer-button.component';
+
 @Component({
   selector: 'kamadoor-sliding-doors',
   templateUrl: './sliding-doors.component.html',
   styleUrls: ['./sliding-doors.component.scss'],
-  imports: [DataViewModule],
+  imports: [DataViewModule, OfferButtonComponent],
   standalone: true,
 })
 export class SlidingDoorsComponent {
   offerItems = [
     {
       name: 'DRZWI PRZESUWNE\nSZKLANE',
-      image: 'noPhoto.jpg',
+      image: 'glass.jpg',
       url: 'oferta/drzwi-przesuwne/szklane',
     },
     {
       name: 'DRZWI PRZESUWNE\nDREWNIANE',
-      image: 'noPhoto.jpg',
+      image: 'wooden.jpg',
       url: 'oferta/drzwi-przesuwne/drewniane',
     },
     {
       name: 'DRZWI ŁAMANE\nDRZWI SKŁADANE',
-      image: 'noPhoto.jpg',
+      image: 'folding.jpg',
       url: 'oferta/drzwi-przesuwne/lamane-skladane',
     },
   ];

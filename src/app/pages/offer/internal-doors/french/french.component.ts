@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
-import { ImageModule } from 'primeng/image';
+import { ImagePreviewComponent } from '@components/image-preview/image-preview.component';
 
 @Component({
   selector: 'kamadoor-internal-french',
   templateUrl: './french.component.html',
   styleUrls: ['./french.component.scss'],
-  imports: [ImageModule],
+  imports: [ImagePreviewComponent],
   standalone: true,
 })
 export class InternalFrenchComponent {

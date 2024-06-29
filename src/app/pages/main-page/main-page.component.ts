@@ -3,11 +3,13 @@ import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import { DataViewModule } from 'primeng/dataview';
 
+import { MenuOfferButtonComponent } from '@components/menu-offer-button/menu-offer-button.component';
+
 @Component({
   selector: 'kamadoor-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.scss'],
-  imports: [CarouselModule, DataViewModule],
+  imports: [CarouselModule, DataViewModule, MenuOfferButtonComponent],
   standalone: true,
 })
 export class MainPageComponent {
@@ -100,25 +102,25 @@ export class MainPageComponent {
     {
       name: 'DRZWI\nUKRYTE',
       description: 'drzwi ukryte, drzwi niewidoczne',
-      image: 'noPhoto.jpg',
+      image: 'hidden.jpg',
       url: 'oferta/drzwi-ukryte',
     },
     {
       name: 'DRZWI\nPRZESUWNE',
       description: 'drewniane i szklane',
-      image: 'noPhoto.jpg',
+      image: 'sliding.jpg',
       url: 'oferta/drzwi-przesuwne',
     },
     {
       name: 'DRZWI LOFTOWE\nDRZWI SZKLANE',
       description: 'stylowe i nowoczesne',
-      image: 'noPhoto.jpg',
+      image: 'loft.jpg',
       url: 'oferta/drzwi-loftowe-drzwi-szklane',
     },
     {
       name: 'ŚCIANKI PRYSZNICOWE\nKABINY PRYSZNICOWE',
       description: 'ścianki prysznicowe',
-      image: 'noPhoto.jpg',
+      image: 'showers.jpg',
       url: 'oferta/scianki-prysznicowe-kabiny-prysznicowe',
     },
     {

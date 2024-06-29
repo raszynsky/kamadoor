@@ -2,18 +2,20 @@ import { Component } from '@angular/core';
 
 import { DataViewModule } from 'primeng/dataview';
 
+import { OfferButtonComponent } from '@components/offer-button/offer-button.component';
+
 @Component({
   selector: 'kamadoor-internal-doors',
   templateUrl: './internal-doors.component.html',
   styleUrls: ['./internal-doors.component.scss'],
-  imports: [DataViewModule],
+  imports: [DataViewModule, OfferButtonComponent],
   standalone: true,
 })
 export class InternalDoorsComponent {
   offerItems = [
     {
       name: 'DRZWI\nDRE',
-      image: 'noPhoto.jpg',
+      image: 'dre.jpg',
       url: 'oferta/drzwi-wewnetrzne/dre',
     },
     {

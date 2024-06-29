@@ -17,40 +17,38 @@
       naturalne.</span
     >
     <span
-      >Drzwi Dallas są produkowane <b>na wymiar</b> z możliwością
-      <b>modyfikacji</b> wybranego modelu.</span
+      >Drzwi Dallas są produkowane na wymiar z możliwością modyfikacji wybranego
+      modelu.</span
     >
     <span
-      >Pełna oferta drzwi jest dostępna w katalogu pod poniższym linkiem:</span
-    >
-    <a
-      class="text-blue-500 hover:underline"
-      href="https://www.dallas-drzwi.pl/do-pobrania/"
-      >www.dallas-drzwi.pl/do-pobrania</a
+      >Pełna oferta drzwi jest dostępna w
+      <a
+        class="text-blue-500 hover:underline"
+        href="https://www.dallas-drzwi.pl/do-pobrania/"
+        >katalogu.</a
+      ></span
     >
   </div>
 
   <div class="mt-10 flex flex-col w-full">
-    <span class="text-white font-semibold border-b pb-2 border-b-white"
+    <span class="text-white font-semibold pb-2"
       >Poniżej przedstawiamy wybrane modele tego producenta:</span
     >
   </div>
 
-  <div class="grid grid-flow-row grid-rows-5 grid-cols-4 gap-8">
+  <div
+    class="grid grid-flow-row grid-cols-1 tablet:grid-cols-2 desktopSmall:grid-cols-4 justify-between gap-y-8"
+  >
     @for (number of numbers; track number) {
-    <div class="flex flex-col h-full text-center">
-      <p-image
-        [src]="
-          'assets/offer/internal/dallas/DWD-' +
-          number.toString().padStart(2, '0') +
-          '.jpg'
-        "
-        alt="Image"
-        [preview]="true"
-        imageClass="p-6"
-      />
-      <span>DWD-{{ number.toString().padStart(2, "0") }}</span>
-    </div>
+    <kamadoor-image-preview
+      [src]="
+        'assets/offer/internal/dallas/DWD-' +
+        number.toString().padStart(2, '0') +
+        '.jpg'
+      "
+      [label]="'DWD-' + number.toString().padStart(2, '0')"
+      labelClass="pt-4"
+    ></kamadoor-image-preview>
     }
   </div>
 </div>

@@ -14,6 +14,15 @@ module.exports = {
         "kamadoor-gray": "#777",
       },
     },
+    screens: {
+      mobileLarge: "550px",
+      tablet: "640px",
+      desktopSmall: "800px",
+      desktopMenuSmall: "880px",
+      desktop: "1050px",
+      desktopMenuMedium: "1150px",
+      desktopLarge: "1280px",
+    },
   },
   plugins: [],
 };

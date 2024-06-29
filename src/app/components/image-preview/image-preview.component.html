@@ -1,0 +1,18 @@
+<div
+  [class]="
+    'h-[' +
+    maxH +
+    'px] flex flex-col text-center border-t-2 pt-8 border-t-white'
+  "
+>
+  <p-image
+    class="h-[90%]"
+    [src]="src"
+    [preview]="true"
+    styleClass="h-full"
+    imageClass="object-contain h-full"
+  />
+  @if (label) {
+  <span [class]="labelClass">{{ label }}</span>
+  }
+</div>

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
-import { ImageModule } from 'primeng/image';
+import { ImagePreviewComponent } from '@components/image-preview/image-preview.component';
 
 @Component({
   selector: 'kamadoor-external-kmt',
   templateUrl: './kmt.component.html',
   styleUrls: ['./kmt.component.scss'],
-  imports: [ImageModule],
+  imports: [ImagePreviewComponent],
   standalone: true,
 })
 export class ExternalKMTComponent {

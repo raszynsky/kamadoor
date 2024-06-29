@@ -70,12 +70,6 @@ export class HeaderComponent implements OnInit {
       ],
     },
     {
-      icon: 'fa fa-file-pdf-o',
-      label: 'KATALOGI',
-      url: 'katalogi',
-      id: 'catalogues',
-    },
-    {
       icon: 'fa fa-file-image-o',
       label: 'REALIZACJE',
       url: 'realizacje',

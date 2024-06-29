@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
-import { ImageModule } from 'primeng/image';
+import { ImagePreviewComponent } from '@root/src/app/components/image-preview/image-preview.component';
 
 @Component({
   selector: 'kamadoor-internal-voster',
   templateUrl: './voster.component.html',
   styleUrls: ['./voster.component.scss'],
-  imports: [ImageModule],
+  imports: [ImagePreviewComponent],
   standalone: true,
 })
 export class InternalVosterComponent {

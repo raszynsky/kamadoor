@@ -1,0 +1,7 @@
+:host {
+  ::ng-deep {
+    .p-image-preview-container {
+      @apply h-full;
+    }
+  }
+}

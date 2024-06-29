@@ -1,15 +1,13 @@
 <div class="flex flex-col bg-kamadoor-light-gray m-2 p-4">
-  <div class="grid grid-flow-row grid-rows-24 grid-cols-4 gap-8">
+  <div
+    class="grid grid-flow-row grid-cols-1 tablet:grid-cols-2 desktopSmall:grid-cols-4 justify-between gap-y-8"
+  >
     @for (number of numbers; track number) {
-    <div class="flex flex-col h-full text-center">
-      <p-image
-        [src]="'assets/offer/loft/vestibule/DSDW' + number.toString() + '.jpg'"
-        alt="Image"
-        [preview]="true"
-        imageClass="p-6"
-      />
-      <span>DSDW{{ number.toString() }}</span>
-    </div>
+    <kamadoor-image-preview
+      [src]="'assets/offer/loft/vestibule/DSDW' + number.toString() + '.jpg'"
+      [label]="'DSDW-' + number.toString().padStart(2, '0')"
+      labelClass="pt-4"
+    ></kamadoor-image-preview>
     }
   </div>
 </div>

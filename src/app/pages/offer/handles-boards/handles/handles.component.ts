@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 
 import { DataViewModule } from 'primeng/dataview';
-import { ImageModule } from 'primeng/image';
+
+import { ImagePreviewComponent } from '@components/image-preview/image-preview.component';
 
 @Component({
   selector: 'kamadoor-handles-boards-handles',
   templateUrl: './handles.component.html',
   styleUrls: ['./handles.component.scss'],
-  imports: [DataViewModule, ImageModule],
+  imports: [DataViewModule, ImagePreviewComponent],
   standalone: true,
 })
 export class HandlesBoardsHandlesComponent {

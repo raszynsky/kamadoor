@@ -3,6 +3,11 @@ import localePl from '@angular/common/locales/pl';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ImagePreviewComponent } from '@components/image-preview/image-preview.component';
+import { MenuOfferButtonComponent } from '@components/menu-offer-button/menu-offer-button.component';
+import { OfferButtonComponent } from '@components/offer-button/offer-button.component';
+
 import { HeaderComponent } from '@pages/header/header.component';
 import { FooterComponent } from '@pages/footer/footer.component';
 import { PageNotFoundComponent } from '@pages/not-found/not-found.component';
@@ -15,7 +20,6 @@ import { LoftDoorsComponent } from '@pages/offer/loft-doors/loft-doors.component
 import { HiddenDoorsComponent } from '@pages/offer/hidden-doors/hidden-doors.component';
 import { SlidingDoorsComponent } from '@pages/offer/sliding-doors/sliding-doors.component';
 import { ShowersComponent } from '@pages/offer/showers/showers.component';
-import { CataloguesComponent } from '@pages/catalogues/catalogues.component';
 import { RealizationsComponent } from '@pages/realizations/realizations.component';
 import { GuideComponent } from '@pages/guide/guide.component';
 import { AboutUsComponent } from '@pages/about-us/about-us.component';
@@ -54,6 +58,9 @@ registerLocaleData(localePl, 'pl');
     BrowserAnimationsModule,
     CommonModule,
     AppRoutingModule,
+    ImagePreviewComponent,
+    MenuOfferButtonComponent,
+    OfferButtonComponent,
     HeaderComponent,
     FooterComponent,
     PageNotFoundComponent,
@@ -66,7 +73,6 @@ registerLocaleData(localePl, 'pl');
     HiddenDoorsComponent,
     SlidingDoorsComponent,
     ShowersComponent,
-    CataloguesComponent,
     RealizationsComponent,
     GuideComponent,
     AboutUsComponent,
