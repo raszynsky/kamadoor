@@ -17,8 +17,9 @@ module.exports = {
     screens: {
       mobileLarge: "550px",
       tablet: "640px",
-      desktopSmall: "800px",
+      desktopSmall: "825px",
       desktopMenuSmall: "880px",
+      headerMenuBreak: "960px",
       desktop: "1050px",
       desktopMenuMedium: "1150px",
       desktopLarge: "1280px",

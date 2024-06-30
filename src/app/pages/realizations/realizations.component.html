@@ -4,4 +4,23 @@
   >
     Realizacje
   </span>
+
+  <div
+    class="mt-8 grid grid-flow-row grid-cols-1 desktop:grid-cols-2 justify-between gap-8"
+  >
+    @for(item of items; track item.label) {
+    <div class="flex flex-col w-full gap-4">
+      <span
+        class="inline-flex mt-4 pb-2 h-[200%] w-full border-b-2 border-b-white font-sans text-3xl text-white items-end"
+      >
+        {{ item.label }}
+      </span>
+
+      <kamadoor-galleria
+        class="flex justify-center"
+        [images]="item.items"
+      ></kamadoor-galleria>
+    </div>
+    }
+  </div>
 </div>

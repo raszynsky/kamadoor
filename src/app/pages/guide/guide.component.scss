@@ -3,5 +3,13 @@
     .p-accordion-header-link {
       @apply text-black bg-kamadoor-orange rounded-lg;
     }
+
+    .p-accordion-header-text {
+      @apply pointer-events-none;
+    }
+
+    .p-accordion-toggle-icon {
+      @apply pointer-events-none;
+    }
   }
 }

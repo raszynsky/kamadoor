@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { CarouselModule } from 'primeng/carousel';
+import { CarouselModule, Carousel } from 'primeng/carousel';
 import { DataViewModule } from 'primeng/dataview';
 
 import { MenuOfferButtonComponent } from '@components/menu-offer-button/menu-offer-button.component';
@@ -130,4 +130,8 @@ export class MainPageComponent {
       url: 'oferta/klamki-do-drzwi-listwy-przypodlogowe',
     },
   ];
+
+  constructor() {
+    Carousel.prototype.onTouchMove = () => {};
+  }
 }

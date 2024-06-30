@@ -18,7 +18,7 @@
     }
 
     .p-submenu-list {
-      @apply w-[300%];
+      @apply w-full headerMenuBreak:w-[300%];
 
       .p-menuitem-content {
         @apply font-semibold #{!important};
