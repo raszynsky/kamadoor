@@ -14,18 +14,27 @@
     <div class="bg-black w-full h-full flex justify-center">
       <img
         [src]="item.itemImageSrc"
-        [ngClass]="{ 'w-[500px] h-[650px] object-contain block': !fullscreen }"
+        [ngClass]="{
+          'w-[300px] h-[400px] desktop:w-[500px] desktop:h-[650px] object-contain block':
+            !fullscreen
+        }"
       />
     </div>
   </ng-template>
   <ng-template pTemplate="thumbnail" let-item>
     <div
       class="overflow-y-clip grid grid-nogutter justify-content-center"
-      [ngClass]="{ 'h-[100px]': !fullscreen, 'h-[200px]': fullscreen }"
+      [ngClass]="{
+        'h-[50px] desktop:h-[100px]': !fullscreen,
+        'h-[100px] desktop:h-[200px]': fullscreen
+      }"
     >
       <img
         class="object-contain"
-        [ngClass]="{ 'h-[100px]': !fullscreen, 'h-[200px]': fullscreen }"
+        [ngClass]="{
+          'h-[50px] desktop:h-[100px]': !fullscreen,
+          'h-[100px] desktop:h-[200px]': fullscreen
+        }"
         [src]="item.thumbnailImageSrc"
       />
     </div>

@@ -137,7 +137,9 @@ export class GalleriaComponent implements OnInit, OnDestroy {
   }
 
   galleriaClass() {
-    return `w-[500px] custom-galleria ${this.fullscreen ? 'fullscreen' : ''}`;
+    return `w-[300px] desktop:w-[500px] custom-galleria ${
+      this.fullscreen ? 'fullscreen' : ''
+    }`;
   }
 
   fullScreenIcon() {
